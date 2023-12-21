@@ -48,13 +48,13 @@ async def compin(event):
             elif 'jpg' in video:
                 return    
             else:
-                await event.reply('📦',
+                await event.reply('test waye',
                             buttons=[  
                                 [Button.inline("RENAME", data="rename")]])
                 
 @Drone.on(events.callbackquery.CallbackQuery(data="encode"))
 async def _encode(event):
-    await event.edit("**🔀ENCODE**",
+    await event.edit("**🔀ENCODE test waye**",
                     buttons=[
                         [Button.inline("240p", data="240"),
                          Button.inline("360p", data="360")],
@@ -88,7 +88,7 @@ async def convert(event):
                         
 @Drone.on(events.callbackquery.CallbackQuery(data="back"))
 async def back(event):
-    await event.edit("📽", buttons=[
+    await event.edit("test wayehhhhhbb", buttons=[
                     [Button.inline("ENCODE", data="encode"),
                      Button.inline("COMPRESS", data="compress")],
                     [Button.inline("CONVERT", data="convert"),
