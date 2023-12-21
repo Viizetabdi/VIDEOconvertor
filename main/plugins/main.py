@@ -32,7 +32,7 @@ async def compin(event):
         if media:
             video = event.file.mime_type
             if 'video' in video:
-                await event.reply("📽",
+                await event.reply("TEST WAYE MAXA LAGA XAWIYA",
                             buttons=[
                                 [Button.inline("ENCODE", data="encode"),
                                  Button.inline("COMPRESS", data="compress")],
